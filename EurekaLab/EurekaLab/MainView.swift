@@ -13,7 +13,6 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            Color.orange
             if showSplash {
                 Text("Welcome")
                     .font(Font.largeTitle)

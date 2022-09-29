@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB27A55E28E5E67E0058903E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27A55D28E5E67D0058903E /* Extensions.swift */; };
+		AB27A56028E5E7360058903E /* ImageRecordTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27A55F28E5E7360058903E /* ImageRecordTile.swift */; };
+		AB27A56228E5EDB60058903E /* ImageRecordDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB27A56128E5EDB60058903E /* ImageRecordDetail.swift */; };
 		AB59860C28E4A9C600E47ACC /* EurekaLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59860B28E4A9C600E47ACC /* EurekaLabApp.swift */; };
 		AB59860E28E4A9C600E47ACC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59860D28E4A9C600E47ACC /* ContentView.swift */; };
 		AB59861028E4A9C800E47ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB59860F28E4A9C800E47ACC /* Assets.xcassets */; };
@@ -15,10 +18,14 @@
 		AB59861828E4A9C800E47ACC /* EurekaLab.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB59861628E4A9C800E47ACC /* EurekaLab.xcdatamodeld */; };
 		AB59862028E4AAC500E47ACC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59861F28E4AAC500E47ACC /* MainView.swift */; };
 		AB59862528E4C5EF00E47ACC /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59862428E4C5EF00E47ACC /* ImagePickerView.swift */; };
-		AB59862728E4CB3800E47ACC /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59862628E4CB3800E47ACC /* CameraViewModel.swift */; };
+		AB59862728E4CB3800E47ACC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB59862628E4CB3800E47ACC /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB27A55C28E522580058903E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AB27A55D28E5E67D0058903E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB27A55F28E5E7360058903E /* ImageRecordTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecordTile.swift; sourceTree = "<group>"; };
+		AB27A56128E5EDB60058903E /* ImageRecordDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecordDetail.swift; sourceTree = "<group>"; };
 		AB59860828E4A9C600E47ACC /* EurekaLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EurekaLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB59860B28E4A9C600E47ACC /* EurekaLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurekaLabApp.swift; sourceTree = "<group>"; };
 		AB59860D28E4A9C600E47ACC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,7 +36,7 @@
 		AB59861928E4A9C800E47ACC /* EurekaLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EurekaLab.entitlements; sourceTree = "<group>"; };
 		AB59861F28E4AAC500E47ACC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB59862428E4C5EF00E47ACC /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
-		AB59862628E4CB3800E47ACC /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		AB59862628E4CB3800E47ACC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 		AB59860A28E4A9C600E47ACC /* EurekaLab */ = {
 			isa = PBXGroup;
 			children = (
+				AB27A55C28E522580058903E /* Info.plist */,
 				AB59860B28E4A9C600E47ACC /* EurekaLabApp.swift */,
 				AB59860D28E4A9C600E47ACC /* ContentView.swift */,
 				AB59860F28E4A9C800E47ACC /* Assets.xcassets */,
@@ -71,7 +79,10 @@
 				AB59861128E4A9C800E47ACC /* Preview Content */,
 				AB59861F28E4AAC500E47ACC /* MainView.swift */,
 				AB59862428E4C5EF00E47ACC /* ImagePickerView.swift */,
-				AB59862628E4CB3800E47ACC /* CameraViewModel.swift */,
+				AB59862628E4CB3800E47ACC /* ViewModel.swift */,
+				AB27A55D28E5E67D0058903E /* Extensions.swift */,
+				AB27A55F28E5E7360058903E /* ImageRecordTile.swift */,
+				AB27A56128E5EDB60058903E /* ImageRecordDetail.swift */,
 			);
 			path = EurekaLab;
 			sourceTree = "<group>";
@@ -157,10 +168,13 @@
 				AB59861528E4A9C800E47ACC /* Persistence.swift in Sources */,
 				AB59860E28E4A9C600E47ACC /* ContentView.swift in Sources */,
 				AB59861828E4A9C800E47ACC /* EurekaLab.xcdatamodeld in Sources */,
+				AB27A55E28E5E67E0058903E /* Extensions.swift in Sources */,
 				AB59862028E4AAC500E47ACC /* MainView.swift in Sources */,
 				AB59860C28E4A9C600E47ACC /* EurekaLabApp.swift in Sources */,
+				AB27A56028E5E7360058903E /* ImageRecordTile.swift in Sources */,
 				AB59862528E4C5EF00E47ACC /* ImagePickerView.swift in Sources */,
-				AB59862728E4CB3800E47ACC /* CameraViewModel.swift in Sources */,
+				AB59862728E4CB3800E47ACC /* ViewModel.swift in Sources */,
+				AB27A56228E5EDB60058903E /* ImageRecordDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +308,12 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EurekaLab/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Accept to use the camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Requires user’s location for better user experience";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Requires user’s location for better user experience";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,8 +341,12 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EurekaLab/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Accept to use the camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Requires user’s location for better user experience";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Requires user’s location for better user experience";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
